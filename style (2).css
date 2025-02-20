@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #1c1c1c, #444);
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin: 50px auto;
+    padding: 20px;
+    width: 80%;
+    max-width: 400px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
+}
+
+h1, h2 {
+    font-size: 22px;
+}
+
+button {
+    background: #f39c12;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+    margin: 10px;
+}
+
+button:hover {
+    background: #e67e22;
+}
+
+#countdown {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.wheel-container {
+    margin: 20px auto;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: conic-gradient(#ffcc00 30deg, #ff5733 60deg, #33ff57 90deg, #3399ff 120deg, #ffcc00 150deg, #ff5733 180deg, #33ff57 210deg, #3399ff 240deg, #ffcc00 270deg, #ff5733 300deg, #33ff57 330deg, #3399ff 360deg);
+    position: relative;
+    transition: transform 3s ease-out;
+}
+
+.coin {
+    width: 50px;
+    cursor: pointer;
+    animation: bounce 1s infinite alternate;
+}
+
+@keyframes bounce {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+}
